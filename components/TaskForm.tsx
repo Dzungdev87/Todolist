@@ -59,7 +59,7 @@ export default function TaskForm({ lists, task, defaultListId, onSave, onClose }
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
@@ -89,7 +89,7 @@ export default function TaskForm({ lists, task, defaultListId, onSave, onClose }
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="px-5 py-5 space-y-4">
+        <form onSubmit={handleSubmit} className="px-5 pt-5 pb-safe-form space-y-4">
           {/* Title */}
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-1.5">

@@ -39,7 +39,7 @@ export default function ListForm({ list, onSave, onClose }: ListFormProps) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} aria-hidden />
 
       <div className="relative w-full sm:max-w-md bg-[var(--color-surface-1)] border border-[var(--color-border)] rounded-t-3xl sm:rounded-2xl shadow-2xl animate-slide-up max-h-[90dvh] overflow-y-auto">
@@ -61,7 +61,7 @@ export default function ListForm({ list, onSave, onClose }: ListFormProps) {
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="px-5 py-5 space-y-4">
+        <form onSubmit={handleSubmit} className="px-5 pt-5 pb-safe-form space-y-4">
           {/* Preview */}
           <div className="flex items-center gap-3 p-3 bg-[var(--color-surface-card)] rounded-xl border border-[var(--color-border)]">
             <div

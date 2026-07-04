@@ -204,4 +204,8 @@
   .pb-safe-bottom-nav {
     padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
   }
+
+  .pb-safe-form {
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  }
 }
