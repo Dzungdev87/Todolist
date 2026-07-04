@@ -196,4 +196,12 @@
   .safe-bottom {
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
+
+  .bottom-safe-fab {
+    bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .pb-safe-bottom-nav {
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
 }

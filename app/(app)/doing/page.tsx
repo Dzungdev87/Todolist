@@ -285,7 +285,7 @@ export default function DoingPage() {
         id="add-task-fab"
         onClick={() => { setEditingTask(undefined); setShowForm(true); }}
         aria-label="Thêm công việc mới"
-        className="fixed bottom-20 right-5 w-14 h-14 gradient-brand rounded-full flex items-center justify-center shadow-lg shadow-[var(--color-brand-700)]/50 hover:scale-105 active:scale-95 transition-transform z-40"
+        className="fixed bottom-safe-fab right-5 w-14 h-14 gradient-brand rounded-full flex items-center justify-center shadow-lg shadow-[var(--color-brand-700)]/50 hover:scale-105 active:scale-95 transition-transform z-40"
       >
         <Plus size={26} strokeWidth={2.5} className="text-white" />
       </button>
